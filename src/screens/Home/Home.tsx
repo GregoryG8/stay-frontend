@@ -1,10 +1,15 @@
 import { StatusBar } from "expo-status-bar";
 import { Text, View } from "react-native";
-import styles from "./Home.styles";
+import homeStyles from "./Home.styles";
+import { useTheme } from "../../context/ThemeContext";
 
 export default function Home() {
+  const { theme, toggleTheme } = useTheme();
+
+  console.log(theme);
+  
   return (
-    <View style={styles.container}>
+    <View style={homeStyles.container}>
       <Text>Open up Home.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
