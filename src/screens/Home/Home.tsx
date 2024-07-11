@@ -10,7 +10,7 @@ export default function Home() {
   
   return (
     <View style={homeStyles.container}>
-      <Text>Open up Home.tsx to start working on your app!</Text>
+      <Text style={homeStyles.text}>Open up Home.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
   );
