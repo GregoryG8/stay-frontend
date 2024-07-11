@@ -24,7 +24,7 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) =
         return () => subscription.remove();
     }, []);
 
-    const themeColors = theme === 'light' ? Colors.dark : Colors.light;
+    const themeColors = theme === 'dark' ? Colors.dark : Colors.light;
 
     return (
         <ThemeContext.Provider value={{ theme, toggleTheme, colors: themeColors }}>
