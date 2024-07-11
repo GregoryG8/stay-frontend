@@ -1,21 +1,12 @@
-interface ColorsInterface {
-  light: {
-    primaryColor: string;
-    secondaryColor: string;
-    backgroundColor: string;
-    textColor: string;
-    linkColor: string;
-  };
-  dark: {
-    primaryColor: string;
-    secondaryColor: string;
-    backgroundColor: string;
-    textColor: string;
-    linkColor: string;
-  };
+export interface ColorsInterface {
+  primaryColor: string;
+  secondaryColor: string;
+  backgroundColor: string;
+  textColor: string;
+  linkColor: string;
 }
 
-const Colors: ColorsInterface = {
+const Colors = {
   light: {
     primaryColor: "#001F3D",
     secondaryColor: "#FFDE69",

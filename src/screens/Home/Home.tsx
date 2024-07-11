@@ -1,10 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import { Text, View } from "react-native";
-import homeStyles from "./Home.styles";
+import createStyles from "./Home.styles";
 import { useTheme } from "../../context/ThemeContext";
 
 export default function Home() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme, colors } = useTheme();
+  const homeStyles = createStyles(colors);
 
   console.log(theme);
   

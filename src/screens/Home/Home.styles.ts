@@ -1,16 +1,21 @@
 import { StyleSheet } from "react-native";
-import Colors from "../../styles/Colors";
+import { ColorsInterface } from "../../styles/Colors";
 
-const homeStyles = StyleSheet.create({
+const createStyles = (colors: ColorsInterface ) => StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: Colors.dark.backgroundColor,
+        backgroundColor: colors.backgroundColor,
         alignItems: "center",
         justifyContent: "center",
     },
     text: {
-        color: Colors.dark.textColor,
+        color: colors.textColor,
+    },
+
+    prueba: {
+        width: "50%",
+        backgroundColor: colors.backgroundColor,
     }
 });
 
-export default homeStyles;
+export default createStyles;
