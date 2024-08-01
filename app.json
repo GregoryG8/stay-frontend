@@ -22,6 +22,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.87993534169-bsc1ssr9mcgkim37cjlcvbna3oi9qoqn"
+        }
+      ]
+    ]
   }
 }
