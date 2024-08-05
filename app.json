@@ -18,7 +18,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.testdeveloper1.stayfrontend"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -30,6 +31,11 @@
           "iosUrlScheme": "com.googleusercontent.apps.87993534169-bsc1ssr9mcgkim37cjlcvbna3oi9qoqn"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "97dd31eb-d097-48cd-8a6a-17539b22a8ab"
+      }
+    }
   }
 }

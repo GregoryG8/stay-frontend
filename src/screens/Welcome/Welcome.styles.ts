@@ -56,6 +56,24 @@ const welcomeStyles = StyleSheet.create({
         color: Colors.light.secondaryColor,
         fontFamily: "Poppins_900Black",
         fontSize: 20,
+    },
+    googleButton: {
+        width: 0.06 * windowWidth,
+        height: 0.06 * windowHeight,
+        resizeMode: "contain",
+    },
+    backgroundButton:{
+        backgroundColor: "white",
+        borderRadius: 100,
+        width: 0.12 * windowWidth,
+        height: 0.06 * windowHeight,
+        alignItems: "center"
+    },
+    socialMediaButtonContainer: {
+        width: 0.6 * windowWidth,
+        height: 0.06 * windowHeight,
+        flexDirection: "row",
+        justifyContent: "space-around"
     }
 });
 
