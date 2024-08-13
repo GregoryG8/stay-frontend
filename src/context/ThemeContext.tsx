@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, ReactNode, useEffect } from 'react';
+import { createContext, useState, useContext, ReactNode, useEffect } from 'react';
 import { Appearance, ColorSchemeName } from 'react-native';
 import Colors, { ColorsInterface } from '../styles/Colors';
 
@@ -36,7 +36,7 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) =
 export const useTheme = () => {
     const context = useContext(ThemeContext);
     if (!context) {
-        throw new Error("useTheme failed");       
+        throw new Error("useTheme failed");
     }
 
     return context;
