@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <View style={homeStyles.container}>
       <ModeSwitch />
-      <Text style={homeStyles.text}>Open up Home.tsx to start working on your app!</Text>
+      <Text style={homeStyles.text}>Bienvenido a la pantalla principal de la aplicación!</Text>
       <StatusBar style="auto" />
     </View>
   );
